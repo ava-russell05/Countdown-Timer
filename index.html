@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <meta charset="utf-8">
+    <title>Countdown Until 1st Day of 8th Grade</title>
+  </head>
+  <body>
+<h1>Countdown Until the Beginning of 8th Grade</h1>
+
+<p id="demo"></p>
+
+<script>
+
+var countDownDate = new Date("September 10, 2019 08:25:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("demo").innerHTML = days + " " + hours + " "
+  + minutes + " " + seconds + " ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Happy 1st day of 8th grade!!!";
+  }
+}, 1000);
+</script>
+
+<h2>&nbsp;&nbsp;&nbsp;Days &nbsp;&nbsp; Hours &nbsp;&nbsp; Seconds &nbsp;&nbsp; Minutes  </h2>
+
+<h4> Tuesday, September 10th, 2019  @  8:25:00am </h4>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>

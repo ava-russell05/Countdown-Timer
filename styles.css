@@ -1,0 +1,41 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  margin-top: 35px;
+  border: white solid 5px;
+}
+
+body {
+  background-color: #829FD9;
+}
+
+h1 {
+  border: white solid 5px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  border: solid white 5px;
+  margin-top: 0px;
+  margin-left: 440px;
+  margin-right: 440px;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+  border: dotted silver 3px;
+  margin-left: 445px;
+  margin-right: 445px;
+  margin-top: 200px;
+  margin-bottom: 0px;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 95px;
+}
